@@ -1,0 +1,5 @@
+node_modules/
+.idea/
+cm
+junit-reports/
+npm-debug.log
