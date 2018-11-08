@@ -28,6 +28,9 @@ exports.config = {
         searchUserByName: [
             './autotests/tests/searchUserByName.js',
         ],
+        workflowApliedInterviewingHired: [
+            './autotests/tests/workflowApliedInterviewingHired.js',
+        ],
     },
     specs: [
         './autotests/tests/**/*.js',

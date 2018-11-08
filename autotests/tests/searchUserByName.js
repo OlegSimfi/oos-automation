@@ -1,7 +1,7 @@
 const MainPage = require('../pages/main.page');
 
 let crewMembersArrayBeforeSearching = new Array();
-let lenthOfcrewMembersArrayBeforeSearching;
+let amountOfcrewMembersArrayBeforeSearching;
 let nameOfUserForSearching;
 let nameOfUserForAfterSeaching;
 
@@ -16,7 +16,7 @@ describe("Search User by Name", function () {
     });
     it("Find quantity of users and take user for searching", function () {
         crewMembersArrayBeforeSearching = MainPage.crewMembersArray; // Get array of users before searching
-        lenthOfcrewMembersArrayBeforeSearching = crewMembersArrayBeforeSearching.length;  //Find quantity of users (Array length)
+        amountOfcrewMembersArrayBeforeSearching = crewMembersArrayBeforeSearching.length;  //Find amount of users (Array length)
         const userForSearching = crewMembersArrayBeforeSearching[0].getAttribute('textContent'); // Select a user to searching
         nameOfUserForSearching = userForSearching.split(' ')[0]; // Because the search is carried out only by name (Maybe a bug?)
     });
@@ -34,6 +34,6 @@ describe("Search User by Name", function () {
     it("Check the working of the Clear button", function () {
         MainPage.clearButton.click();
         const lenthOfcrewMembersArrayAfterClear = MainPage.crewMembersArray.length;
-        expect(lenthOfcrewMembersArrayAfterClear).to.equal(lenthOfcrewMembersArrayBeforeSearching); // The length of the array after cleaning should be equal to the length of the array before searching
+        expect(lenthOfcrewMembersArrayAfterClear).to.equal(amountOfcrewMembersArrayBeforeSearching); // The length of the array after cleaning should be equal to the length of the array before searching
     });
 });

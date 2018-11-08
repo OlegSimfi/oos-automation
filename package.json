@@ -4,9 +4,8 @@
   "description": "uiautotests",
   "main": "index.js",
   "scripts": {
-    "test-start": "wdio wdio.conf.js --suite searchUserByName ",
-    "test-terminal": "wdio wdio.conf.js --suite ,",
-    "test-single": "wdio wdio.conf.js --suite "
+    "test-start": "wdio wdio.conf.js --suite searchUserByName,workFlowApliedInterviewingHired,workflowApliedInterviewingHired",
+    "test-single": "wdio wdio.conf.js --suite workflowApliedInterviewingHired"
   },
   "repository": {
     "type": "git",
