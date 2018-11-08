@@ -3,8 +3,6 @@ const MainPage = require('../pages/main.page');
 let crewMembersArrayBeforeSearching = new Array();
 let amountOfcrewMembersArrayBeforeSearching;
 let nameOfUserForSearching;
-let nameOfUserForAfterSeaching;
-
 
 
 describe("Search User by Name", function () {
